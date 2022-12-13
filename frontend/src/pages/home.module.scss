@@ -1,0 +1,117 @@
+.HomeContainer {
+  max-width: 1124px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7rem;
+  align-items: center;
+  height: 100vh;
+}
+
+.HomeContent {
+  .title {
+    margin-top: 1rem;
+    font-size: 2.78rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .users {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    strong {
+      color: var(--gray-100);
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+
+      span {
+        color: var(--green-500);
+      }
+    }
+  }
+
+  .form {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 0.5rem;
+
+    input {
+      flex: 1 1 0%;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-radius: 0.25rem;
+      background: var(--gray-800);
+      border-color: var(--gray-600);
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      color: var(--gray-100);
+    }
+
+    button {
+      background: var(--yellow-500);
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-radius: 0.25rem;
+      color: var(--gray-900);
+      font-weight: 700;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      text-transform: uppercase;
+      border: 1px var(--yellow-700);
+      &:hover {
+        background: var(--yellow-700);
+      }
+    }
+  }
+
+  .description {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--gray-300);
+  }
+
+  .createdPools {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+
+    border-top: 1px solid;
+    border-color: var(--gray-600);
+
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--gray-100);
+
+    .createdPoolsDivide {
+      border-right: 1px solid;
+      color: var(--gray-600);
+    }
+
+    .createdPoolsContent {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+
+      .createdPoolsText {
+        display: flex;
+        flex-direction: column;
+
+        .createdPoolsNumber {
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}
