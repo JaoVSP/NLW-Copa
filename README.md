@@ -18,3 +18,9 @@
 - [dayjs](https://www.npmjs.com/package/dayjs)
 - [country-list](https://www.npmjs.com/package/country-list)
 - [react-native-country-flag](https://www.npmjs.com/package/react-native-country-flag)
+
+# Installing:
+
+```
+git clone git@github.com:Jaozim420/NLW-Copa.git
+```
